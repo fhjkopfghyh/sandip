@@ -1,206 +1,500 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trade with Gautam jha trading</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            background-color: #000;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 15px;
-        }
+<title>VIP MARATHI TRADER</title>
 
-        .container {
-            width: 100%;
-            max-width: 420px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
+<meta name="description" content="Join King of Nifty for free daily Nifty & BankNifty analysis.">
 
-        /* Profile Image Wrapper */
-        .profile-container {
-            width: 170px;
-            height: 170px;
-            border-radius: 50%;
-            border: 3px solid #fff;
-            overflow: hidden;
-            box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
-            margin-bottom: 5px;
-        }
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-        .profile-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+body{
+    font-family:Arial,Segoe UI,sans-serif;
+    background:#f7f9fc;
+    color:#151525;
+}
 
-        /* Title Box */
-        .title-box {
-            width: 100%;
-            border: 1.5px solid #fff;
-            border-radius: 8px;
-            padding: 12px 10px;
-            font-size: 20px;
-            font-weight: bold;
-            font-family: 'Georgia', serif;
-            letter-spacing: 0.5px;
-        }
+.container{
+    width:100%;
+    max-width:440px;
+    margin:auto;
+    padding:22px 10px;
+    text-align:center;
+}
 
-        /* Call To Action Button */
-        .btn-join {
-            width: 100%;
-            padding: 14px 10px;
-            background: linear-gradient(180deg, #1b75bc 0%, #004080 100%);
-            border: 1.5px solid #fff;
-            border-radius: 4px;
-            color: #fff;
-            font-size: 17px;
-            font-weight: bold;
-            text-decoration: none;
-            display: block;
-            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.4);
-            letter-spacing: 0.5px;
-        }
 
-        /* Click Here Pointer */
-        .click-here {
-            font-size: 26px;
-            font-weight: 800;
-            color: #38b6ff;
-            margin: 2px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-        }
+/* Online Bar */
 
-        /* Features Main Card */
-        .features-card {
-            width: 100%;
-            background-color: #080808;
-            border: 1px solid #222;
-            border-radius: 16px;
-            padding: 20px 15px;
-            display: flex;
-            flex-direction: column;
-            gap: 14px;
-            box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
-            text-align: left;
-        }
+.online{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background:#e8f5e9;
+    color:#218739;
+    padding:6px 14px;
+    border-radius:30px;
+    font-size:11px;
+    font-weight:bold;
+}
 
-        .feature-item {
-            font-size: 15px;
-            font-weight: 600;
-        }
+.dot{
+    width:7px;
+    height:7px;
+    background:#22c55e;
+    border-radius:50%;
+}
 
-        .stars {
-            color: #ff9900;
-            font-size: 16px;
-        }
 
-        /* Footer Tag Box */
-        .footer-box {
-            width: 100%;
-            border: 1.5px solid #fff;
-            border-radius: 6px;
-            padding: 10px;
-            font-size: 13px;
-            font-weight: bold;
-            line-height: 1.4;
-        }
+/* Profile */
 
-        /* Managed By Section (Clickable) */
-        .managed-by {
-            margin-top: 5px;
-            background-color: #0d131a;
-            border: 1px solid #1c2633;
-            border-radius: 12px;
-            padding: 10px 25px;
-            font-size: 14px;
-            color: #a0aab2;
-            width: 90%;
-            text-decoration: none;
-            display: block;
-            transition: 0.3s;
-        }
+.profile{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin:18px auto 8px;
+    overflow:hidden;
+    border:3px solid white;
+    box-shadow:0 4px 15px #ddd;
+}
 
-        .managed-by:hover {
-            border-color: #38b6ff;
-        }
+.profile img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
 
-        .managed-by span {
-            color: #38b6ff;
-            font-weight: bold;
-        }
-    </style>
+
+/* Title */
+
+h1{
+    font-size:20px;
+    margin:8px 0 3px;
+    font-weight:800;
+}
+
+.tag{
+    color:#0066ff;
+    font-weight:bold;
+    font-size:12px;
+}
+
+
+/* Rating */
+
+.rating{
+    margin:10px;
+    color:#ff9800;
+    font-size:16px;
+}
+
+.rating small{
+    color:#777;
+    font-size:11px;
+}
+
+
+/* Buttons */
+
+.btn{
+    position:relative;
+    display:block;
+
+    width:100%;
+    max-width:420px;
+
+    margin:14px auto;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #0066ff,
+        #004dcc
+    );
+
+    color:white;
+
+    padding:18px 8px;
+
+    border-radius:11px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+    font-size:13px;
+
+    white-space:nowrap;
+
+    box-shadow:
+        0 4px 12px #b8d0ff;
+}
+
+
+/* Sliding Light */
+
+.btn::after{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-100%;
+
+    width:45%;
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.75),
+        transparent
+    );
+
+    transform:skewX(-20deg);
+
+    animation:buttonLight 2s infinite;
+}
+
+@keyframes buttonLight{
+
+    0%{
+        left:-100%;
+    }
+
+    45%{
+        left:120%;
+    }
+
+    100%{
+        left:120%;
+    }
+
+}
+
+
+/* Stats */
+
+.stats{
+    display:flex;
+    gap:7px;
+    margin:14px 0;
+}
+
+.card{
+    flex:1;
+    background:white;
+    padding:11px 4px;
+    border-radius:11px;
+    box-shadow:0 2px 7px #eee;
+    font-size:11px;
+}
+
+.number{
+    color:#0066ff;
+    font-size:17px;
+    font-weight:bold;
+    margin-bottom:2px;
+}
+
+
+/* Content */
+
+.heading{
+    font-size:15px;
+    font-weight:bold;
+    line-height:1.4;
+}
+
+.heading span{
+    color:#0066ff;
+}
+
+.sub{
+    color:#777;
+    margin:7px;
+    font-size:11px;
+}
+
+
+/* Alert */
+
+.alert{
+    background:#fff3e0;
+    color:#e65100;
+    padding:9px;
+    border-radius:25px;
+    font-size:11px;
+    font-weight:bold;
+    margin:13px 0;
+}
+
+
+/* Features */
+
+.feature{
+    background:white;
+    padding:11px;
+    margin:7px 0;
+    border-radius:10px;
+
+    text-align:left;
+
+    display:flex;
+    gap:9px;
+    align-items:center;
+
+    box-shadow:0 2px 6px #eee;
+
+    font-size:12px;
+}
+
+.icon{
+    font-size:18px;
+}
+
+
+/* Footer */
+
+.ads{
+    margin-top:22px;
+    padding:13px;
+    border-top:1px solid #ddd;
+    font-size:11px;
+    color:#777;
+}
+
+.ads a{
+    color:#0066ff;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.disclaimer{
+    margin-top:14px;
+    font-size:9px;
+    color:#999;
+    line-height:1.4;
+}
+
+</style>
 </head>
+
 <body>
 
-    <div class="container">
-        <!-- Profile Image -->
-        <div class="profile-container">
-            <img src="https://i.ibb.co/8nYpFL4s/p-WRGBx-Po-Uc-Jt5z-Zd-En-Df-BFl2a-YU-c-Hc2-Ciqw-NMUvfv-Cj-Kv-LGXuls-teh-B-wfw-Oq-Pju-AK2hux7rm-U85cca.jpg" alt="Trade with Gautam Jha">
-        </div>
+<div class="container">
 
-        <!-- Channel Title -->
-        <div class="title-box">
-            Trade with sandeep
-        </div>
+    <!-- Online -->
 
-        <!-- Button -->
-        <a href="https://t.me/+aISEp6TR638wODlk" class="btn-join">
-            JOIN NOW - FREE SIGNALS
-        </a>
-
-        <!-- Click Here Text -->
-        <div class="click-here">
-            Click Here 👆
-        </div>
-
-        <!-- Content Card -->
-        <div class="features-card">
-            <div class="feature-item">
-                📌 India No.1 Telegram Channel <span class="stars">★★★★★</span>
-            </div>
-            <div class="feature-item">
-                🚀 8 Years Experience Of Market
-            </div>
-            <div class="feature-item">
-                ✅ Risk Management
-            </div>
-            <div class="feature-item">
-                🎯 Accuracy More Then 90%
-            </div>
-            <div class="feature-item">
-                📊 Every Day Nifty50 Volume Research Levels
-            </div>
-        </div>
-
-        <!-- Sub Footer Box -->
-        <div class="footer-box">
-            🗿 No Paid Promotions • No Fake Calls • 100% Transparent Performance
-        </div>
-
-        <!-- Managed By Badge (Linked) -->
-        <a href="https://telegram.me/+3XoqJNLxYHswNTc1" class="managed-by" target="_blank">
-            Managed by <span>Adbuildagency</span>
-        </a>
+    <div class="online">
+        <span class="dot"></span>
+        5,947 Traders Online Now
     </div>
+
+
+    <!-- Profile -->
+
+    <div class="profile">
+
+        <img
+        src="https://i.ibb.co/8nYpFL4s/p-WRGBx-Po-Uc-Jt5z-Zd-En-Df-BFl2a-YU-c-Hc2-Ciqw-NMUvfv-Cj-Kv-LGXuls-teh-B-wfw-Oq-Pju-AK2hux7rm-U85cca.jpg"alt="Logo">
+
+    </div>
+
+
+    <!-- Title -->
+
+    <h1>TRADE WITH SANDEEP
+
+    <div class="tag">
+        🏆 India's No.1 Stock Market Channel
+    </div>
+
+
+    <!-- Rating -->
+
+    <div class="rating">
+
+        ★★★★★
+
+        <br>
+
+        <small>
+            4.9/5 (2340 Reviews)
+        </small>
+
+    </div>
+
+
+    <!-- Button -->
+
+    <a
+    class="btn"
+    href="https://t.me/+aISEp6TR638wODlk">
+
+        Join Free Telegram Channel →
+
+    </a>
+
+
+    <!-- Stats -->
+
+    <div class="stats">
+
+        <div class="card">
+
+            <div class="number">
+                50K+
+            </div>
+
+            Members
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="number">
+                5+
+            </div>
+
+            Years
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="number">
+                95%
+            </div>
+
+            Accuracy
+
+        </div>
+
+    </div>
+
+
+    <!-- Content -->
+
+    <div class="heading">
+
+        Get <span>FREE Daily Calls</span>
+
+        <br>
+
+        for NIFTY, BANKNIFTY & SENSEX
+
+    </div>
+
+
+    <div class="sub">
+
+        Join thousands of traders getting daily market analysis
+
+    </div>
+
+
+    <!-- Alert -->
+
+    <div class="alert">
+
+        🔥 Limited FREE Access Available
+
+    </div>
+
+
+    <!-- Features -->
+
+    <div class="feature">
+
+        <div class="icon">
+            📊
+        </div>
+
+        <div>
+            Daily Nifty & BankNifty Levels
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="icon">
+            🎓
+        </div>
+
+        <div>
+            Educational Market Analysis
+        </div>
+
+    </div>
+
+
+    <div class="feature">
+
+        <div class="icon">
+            👥
+        </div>
+
+        <div>
+            50,000+ Subscribers Community
+        </div>
+
+    </div>
+
+
+    <!-- Second Button -->
+
+    <a
+    class="btn"
+    href="https://t.me/+aISEp6TR638wODlk">
+
+        Join Free Telegram Channel →
+
+    </a>
+
+
+    <!-- Disclaimer -->
+
+    <div class="disclaimer">
+
+        <strong>
+            Disclaimer:
+        </strong>
+
+        <br>
+
+        This channel is for educational purposes only.
+        Trading involves market risk.
+        Please consult your financial advisor before making investment decisions.
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <div class="ads">
+
+        🔥 Powered by
+
+        <a href="https://telegram.me/+3XoqJNLxYHswNTc1">
+
+            ADBUILDAGENCY
+
+        </a>
+
+    </div>
+
+</div>
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
